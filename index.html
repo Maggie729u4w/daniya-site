@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Женский курс — пример структуры</title>
+  <title>Дания Ахмедзянова — Духовный наставник</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,20 +13,21 @@
       color: #333;
     }
     header {
-      background: linear-gradient(to bottom, #fff 0%, #f4efe8 100%);
+      background: url('https://i.imgur.com/UOMrFka.jpg') no-repeat center center / cover;
       text-align: center;
-      padding: 3em 1em;
+      padding: 5em 1em 3em;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
     header h1 {
-      font-size: 2.2em;
+      font-size: 2.8em;
     }
     header p {
-      font-size: 1.1em;
-      color: #777;
+      font-size: 1.2em;
     }
     section {
       padding: 3em 1.5em;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
     .section-light {
@@ -38,14 +39,14 @@
     h2 {
       font-size: 1.8em;
       margin-bottom: 0.5em;
+      text-align: center;
     }
-    .order-box, .day, .result, .block {
-      background: #fff;
-      border: 1px solid #eee;
+    .box, .block {
+      background: #ffffffcc;
       border-radius: 12px;
       padding: 2em;
       margin-bottom: 2em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.03);
+      box-shadow: 0 0 15px rgba(0,0,0,0.04);
     }
     .button {
       display: inline-block;
@@ -55,11 +56,17 @@
       padding: 1em 2em;
       border-radius: 30px;
       font-weight: bold;
-      margin-top: 1em;
+      text-align: center;
+      margin: 1em auto;
     }
-    .faq {
-      margin-top: 2em;
-      text-align: left;
+    .certificates img {
+      max-width: 100%;
+      margin: 1em 0;
+      border-radius: 12px;
+    }
+    .reviews, .schedule {
+      display: grid;
+      gap: 1em;
     }
     footer {
       text-align: center;
@@ -71,58 +78,71 @@
 </head>
 <body>
   <header>
-    <h1>Пример женского курса</h1>
-    <p>Создан по структуре сайта life-psychology.ru/wom</p>
+    <h1>Дания Ахмедзянова</h1>
+    <p>Духовный наставник, преподаватель медитации и энергии</p>
   </header>
 
   <section class="section-light">
-    <div class="order-box">
-      <h2>Ваш заказ</h2>
-      <p>Марафон женственности — <strong>5 000 руб.</strong></p>
-      <p>Имя: Мария Иванова<br>Email: mail@example.com<br>Телефон: +7 (999) 999-99-99</p>
-      <a class="button" href="#">ОПЛАТИТЬ УЧАСТИЕ</a>
+    <h2>Обо мне</h2>
+    <div class="box">
+      <p>Я — Дания Ахмедзянова, духовный наставник, преподаватель медитации, энерго-практик и целитель с опытом более 10 лет.</p>
+      <p>Автор более 20 курсов по тета-хилингу и медитациям.</p>
+      <p>После нескольких личных theta-сессий мои клиенты с лёгкостью:</p>
+      <ul>
+        <li>увеличивали доходы в 10 раз</li>
+        <li>выходили на обложки журналов</li>
+        <li>становились продюсерами и телеведущими</li>
+      </ul>
+      <p>Я верю в соединение духовного и материального — именно этот путь дарует нам смысл и гармонию.</p>
     </div>
   </section>
 
   <section class="section-soft">
-    <h2>Что внутри курса?</h2>
-    <div class="block">Медитации, практика принятия, энергетические активации и поддержка сообщества</div>
-    <div class="block">Доступ к закрытому Telegram-чату</div>
+    <h2>Программа курса</h2>
+    <div class="box">
+      <ul>
+        <li>День 1 — Тета-медитация: освобождение от внутреннего напряжения</li>
+        <li>День 2 — Принятие себя и раскрытие женственности</li>
+        <li>День 3 — Проявление желаемой реальности</li>
+      </ul>
+    </div>
   </section>
 
-  <section class="section-light">
-    <h2>В результате вы получите</h2>
-    <ul>
-      <li>Глубокое принятие себя</li>
-      <li>Легкость и внутреннюю свободу</li>
-      <li>Привлекательность и уверенность</li>
-    </ul>
-  </section>
-
-  <section class="section-soft">
-    <h2>Программа по дням</h2>
-    <div class="day">День 1: Погружение в женскую энергию</div>
-    <div class="day">День 2: Раскрытие сердца и чувств</div>
-    <div class="day">День 3: Отношения и предназначение</div>
-  </section>
-
-  <section class="section-light">
-    <h2>Отзывы участниц</h2>
-    <div class="result">«После марафона я ощущаю легкость и радость в теле. Благодарю!»</div>
-    <div class="result">«Произошел мощный внутренний прорыв. Благодарю за свет!»</div>
+  <section class="section-light certificates">
+    <h2>Сертификаты</h2>
+    <img src="https://i.imgur.com/yyNfSox.jpg" alt="certificate 1">
+    <img src="https://i.imgur.com/ksGM5tx.jpg" alt="certificate 2">
+    <img src="https://i.imgur.com/e3aNy2Z.jpg" alt="certificate 3">
   </section>
 
   <section class="section-soft">
-    <h2>Часто задаваемые вопросы</h2>
-    <div class="faq">
-      <strong>Когда старт?</strong><br>Сразу после оплаты вы получаете доступ к курсу.<br><br>
-      <strong>Нужно ли быть онлайн?</strong><br>Нет, вы проходите в удобном ритме.<br><br>
-      <strong>Поддержка?</strong><br>Да, вы будете в Telegram-группе с наставницей.
+    <h2>Отзывы</h2>
+    <div class="reviews">
+      <div class="block">«После работы с Даней я почувствовала лёгкость в теле и душе. Всё стало ясно!»</div>
+      <div class="block">«Благодарю за мягкость, энергию и свет, который ты даришь!»</div>
+      <div class="block">«Произошёл реальный прорыв. Медитации волшебные!»</div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <h2>Расписание ретритов</h2>
+    <div class="schedule">
+      <div class="block">Июль 2025 — Женский круг в Подмосковье</div>
+      <div class="block">Сентябрь 2025 — Медитационный ретрит в Сочи</div>
+      <div class="block">Ноябрь 2025 — Онлайн-погружение в тета-хилинг</div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <h2>Оплата участия</h2>
+    <div class="box">
+      <p>Стоимость курса: <strong>5000 руб.</strong></p>
+      <a class="button" href="payment.html">Перейти к оплате</a>
     </div>
   </section>
 
   <footer>
-    &copy; Пример курса для Дании Ахмедзяновой — создано как образец ✨
+    &copy; 2025 Дания Ахмедзянова — Все права защищены
   </footer>
 </body>
 </html>
