@@ -1,165 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Дания Ахмедзянова — Духовный наставник</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Женский курс — пример структуры</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: 'Playfair Display', serif;
-      background-color: #fff;
+      margin: 0;
+      background: #fefefe;
       color: #333;
-      overflow-x: hidden;
     }
     header {
+      background: linear-gradient(to bottom, #fff 0%, #f4efe8 100%);
       text-align: center;
-      padding: 4em 2em 2em;
-      background-image: url("hero-light.jpg");
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
-    header::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(255,255,255,0.6);
-    }
-    header img {
-      position: relative;
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border: 4px solid white;
-      z-index: 1;
+      padding: 3em 1em;
     }
     header h1 {
-      position: relative;
-      font-size: 2em;
-      margin: 0.5em 0 0;
-      z-index: 1;
+      font-size: 2.2em;
     }
     header p {
-      position: relative;
       font-size: 1.1em;
-      color: #666;
-      margin: 0;
-      z-index: 1;
+      color: #777;
     }
     section {
-      padding: 4em 2em;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
+      padding: 3em 1.5em;
+      max-width: 800px;
+      margin: auto;
     }
-    .about {
-      background: linear-gradient(to bottom, #fff 70%, #f9f9f9);
-    }
-    .quote {
-      font-style: italic;
-      font-size: 1.2em;
-      background-image: url("bokeh-bg.jpg");
-      background-size: cover;
-      color: #444;
-      padding: 4em 2em;
-    }
-    .programs {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2em;
-    }
-    .card {
+    .section-light {
       background: #fff;
+    }
+    .section-soft {
+      background: #f9f7f4;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+    .order-box, .day, .result, .block {
+      background: #fff;
+      border: 1px solid #eee;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
       padding: 2em;
-      width: 250px;
-      transition: transform 0.3s;
+      margin-bottom: 2em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.03);
     }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .contact {
-      background: #fefefe;
-    }
-    .icons a {
-      margin: 0 10px;
-      font-size: 24px;
-      color: #aaa;
+    .button {
+      display: inline-block;
+      background: #f1d5ae;
+      color: #000;
       text-decoration: none;
+      padding: 1em 2em;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    .faq {
+      margin-top: 2em;
+      text-align: left;
     }
     footer {
       text-align: center;
       padding: 2em;
       background: #f1f1f1;
-      font-size: 0.9em;
-      color: #777;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="portrait.jpg" alt="Дания Ахмедзянова">
-    <h1>Дания Ахмедзянова</h1>
-    <p>Духовный наставник, энергопрактик, преподаватель медитации</p>
+    <h1>Пример женского курса</h1>
+    <p>Создан по структуре сайта life-psychology.ru/wom</p>
   </header>
 
-  <section class="about">
-    <h2>Обо мне</h2>
-    <p>Я — проводник для женщин, стремящихся к гармонии души и тела. Более 10 лет я сопровождаю на пути пробуждения, исцеления и соединения с Источником. Автор курсов и ретритов, где я соединяю медитации, тета-хилинг и психологию. Мой путь — это путь света, любви и глубокой внутренней силы.</p>
-  </section>
-
-  <section class="quote">
-    <blockquote>«Ты можешь изменить свою реальность, когда соединяешься с собой на глубинном уровне»</blockquote>
-  </section>
-
-  <section>
-    <h2>Программы</h2>
-    <div class="programs">
-      <div class="card">
-        <h3>Женский ретрит</h3>
-        <p>3 дня уединения, тишины и глубинной перезагрузки</p>
-      </div>
-      <div class="card">
-        <h3>Индивидуальные сессии</h3>
-        <p>Тета-хилинг и энергетическое сопровождение 1 на 1</p>
-      </div>
-      <div class="card">
-        <h3>Курс «Я — Свет»</h3>
-        <p>Онлайн-путь к внутреннему пробуждению</p>
-      </div>
+  <section class="section-light">
+    <div class="order-box">
+      <h2>Ваш заказ</h2>
+      <p>Марафон женственности — <strong>5 000 руб.</strong></p>
+      <p>Имя: Мария Иванова<br>Email: mail@example.com<br>Телефон: +7 (999) 999-99-99</p>
+      <a class="button" href="#">ОПЛАТИТЬ УЧАСТИЕ</a>
     </div>
   </section>
 
-  <section>
-    <h2>Сертификаты</h2>
-    <img src="certificate1.jpg" alt="Сертификат" width="250">
-    <img src="certificate2.jpg" alt="Сертификат" width="250">
+  <section class="section-soft">
+    <h2>Что внутри курса?</h2>
+    <div class="block">Медитации, практика принятия, энергетические активации и поддержка сообщества</div>
+    <div class="block">Доступ к закрытому Telegram-чату</div>
   </section>
 
-  <section>
-    <h2>Отзывы</h2>
-    <img src="review1.jpg" alt="Отзыв" width="300">
-    <img src="review2.jpg" alt="Отзыв" width="300">
+  <section class="section-light">
+    <h2>В результате вы получите</h2>
+    <ul>
+      <li>Глубокое принятие себя</li>
+      <li>Легкость и внутреннюю свободу</li>
+      <li>Привлекательность и уверенность</li>
+    </ul>
   </section>
 
-  <section class="contact">
-    <h2>Связаться со мной</h2>
-    <div class="icons">
-      <a href="https://t.me/твоя_ссылка" target="_blank">📱 Telegram</a>
-      <a href="https://wa.me/твоя_ссылка" target="_blank">📞 WhatsApp</a>
-      <a href="https://instagram.com/твоя_ссылка" target="_blank">📷 Instagram</a>
+  <section class="section-soft">
+    <h2>Программа по дням</h2>
+    <div class="day">День 1: Погружение в женскую энергию</div>
+    <div class="day">День 2: Раскрытие сердца и чувств</div>
+    <div class="day">День 3: Отношения и предназначение</div>
+  </section>
+
+  <section class="section-light">
+    <h2>Отзывы участниц</h2>
+    <div class="result">«После марафона я ощущаю легкость и радость в теле. Благодарю!»</div>
+    <div class="result">«Произошел мощный внутренний прорыв. Благодарю за свет!»</div>
+  </section>
+
+  <section class="section-soft">
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq">
+      <strong>Когда старт?</strong><br>Сразу после оплаты вы получаете доступ к курсу.<br><br>
+      <strong>Нужно ли быть онлайн?</strong><br>Нет, вы проходите в удобном ритме.<br><br>
+      <strong>Поддержка?</strong><br>Да, вы будете в Telegram-группе с наставницей.
     </div>
-    <p><a href="payment.html">Перейти к оплате курса</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Дания Ахмедзянова. Все права защищены.
+    &copy; Пример курса для Дании Ахмедзяновой — создано как образец ✨
   </footer>
 </body>
 </html>
