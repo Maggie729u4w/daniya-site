@@ -3,163 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дания Ахмедзянова — Женский Наставник</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <title>Дания Ахмедзянова — духовный наставник</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: #ffffff;
-      color: #444;
+      background: #fefefe;
+      color: #333;
       scroll-behavior: smooth;
     }
     header {
       text-align: center;
-      padding: 6em 1em 3em;
+      padding: 5em 2em;
       background: url('hero-light.jpg') no-repeat center top / cover;
     }
-    .hero-img {
+    .portrait {
       width: 180px;
       height: 180px;
-      object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 0 60px rgba(255, 240, 255, 0.8);
+      object-fit: cover;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
       margin-bottom: 1em;
     }
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 2.5em;
-      margin: 0;
-      color: #333;
+      margin: 0.3em 0;
     }
     .subtitle {
-      font-size: 1.1em;
-      color: #777;
-      margin-top: 0.5em;
+      font-size: 1.2em;
+      color: #888;
     }
     section {
-      max-width: 900px;
+      max-width: 960px;
       margin: 4em auto;
       padding: 0 1.5em;
+    }
+    .highlight {
+      background: #fffbe7;
+      padding: 1em;
+      border-left: 5px solid #e9d08f;
+      margin-bottom: 2em;
+    }
+    .certificates img, .reviews img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1em;
+    }
+    .swiper {
+      padding: 2em 0;
+    }
+    .swiper-slide {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1em;
+      box-shadow: 0 0 16px rgba(0,0,0,0.05);
     }
     .quote {
       font-family: 'Playfair Display', serif;
       font-style: italic;
       text-align: center;
-      background: url('bokeh-bg.jpg') no-repeat center center / cover;
-      padding: 4em 2em;
+      background: #fffaf0;
+      padding: 3em 2em;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-      color: #666;
-      font-size: 1.3em;
+      margin: 4em auto;
     }
-    .offerings {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2em;
-      margin-top: 2em;
-    }
-    .card {
-      background: #fff;
-      padding: 2em;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-      transition: all 0.3s ease;
-      text-align: center;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 30px rgba(0,0,0,0.08);
-    }
-    .card h3 {
-      font-size: 1.2em;
-      color: #555;
-      margin-bottom: 0.5em;
-    }
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-      max-width: 400px;
-      margin: 2em auto;
-    }
-    input, textarea {
-      padding: 0.8em;
-      border: 1px solid #ddd;
+    .btn {
+      display: inline-block;
+      padding: 1em 2em;
+      background: #f5e4c3;
       border-radius: 8px;
-      font-family: inherit;
-    }
-    button {
-      background: #f7eafc;
-      border: none;
-      padding: 0.8em;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background: #f0dff7;
-    }
-    .social {
-      text-align: center;
-      margin-top: 1em;
-    }
-    .social a {
-      margin: 0 0.5em;
       text-decoration: none;
-      color: #999;
-      font-size: 1em;
+      color: #333;
+      font-weight: bold;
+      margin-top: 1.5em;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #f0d79d;
+    }
+    .contact {
+      text-align: center;
+    }
+    .social-icons a {
+      margin: 0 1em;
+      font-size: 1.5em;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="portrait.jpg" alt="Дания Ахмедзянова" class="hero-img">
+    <img src="portrait.jpg" class="portrait" alt="Дания Ахмедзянова">
     <h1>Дания Ахмедзянова</h1>
-    <p class="subtitle">Духовный наставник и проводник пробуждения женской души</p>
+    <p class="subtitle">духовный наставник, тета-преподаватель, энерго-практик</p>
   </header>
 
-  <section>
-    <h2>О Дании</h2>
-    <p>Путь Дании — это путь любви, света и глубокой внутренней истины. Пройдя через собственные трансформации, она обрела миссию — помогать женщинам соединяться с собой, раскрывать своё божественное начало и жить в состоянии душевного присутствия и женской силы.</p>
+  <section data-aos="fade-up">
+    <div class="highlight">
+      <p>Автор более 20 программ по ThetaHealing®. За 10+ лет практики тысячи женщин вернулись к себе, стали свободнее, начали чувствовать, исцеляться и... просто жить. Мои практики соединяют свет, структуру и силу. Всё начинается внутри — и меняет всё снаружи.</p>
+    </div>
+    <a href="payment.html" class="btn">Оплатить участие</a>
   </section>
 
-  <section class="quote">
-    «Здесь будет вдохновляющая цитата Дании — о свете, любви и пробуждении души.»
-  </section>
-
-  <section style="background: url('tunnel-light.jpg') no-repeat center center / cover; border-radius: 12px; padding: 4em 2em;">
-    <h2>Программы и Пространства</h2>
-    <div class="offerings">
-      <div class="card">
-        <h3>Женские ретриты</h3>
-        <p>Священные выезды в природу для перезагрузки и пробуждения души в кругу женщин.</p>
-      </div>
-      <div class="card">
-        <h3>Индивидуальные сессии</h3>
-        <p>Глубокая работа один на один для мягкого раскрытия истинной природы и исцеления.</p>
-      </div>
-      <div class="card">
-        <h3>Циркулы и встречи</h3>
-        <p>Живые пространства для поддержки, осознанного общения и женского вдохновения.</p>
+  <section data-aos="fade-up">
+    <h2>Сертификаты</h2>
+    <div class="swiper certificates">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="certificate1.jpg" alt="ThetaHealing Certificate 1"></div>
+        <div class="swiper-slide"><img src="certificate2.jpg" alt="ThetaHealing Certificate 2"></div>
+        <div class="swiper-slide"><img src="certificate3.jpg" alt="ThetaHealing Certificate 3"></div>
       </div>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Связаться с Даней</h2>
-    <form>
-      <input type="text" placeholder="Ваше имя">
-      <input type="email" placeholder="Ваш email">
-      <textarea rows="4" placeholder="Сообщение или вопрос"></textarea>
-      <button type="submit">Отправить</button>
-    </form>
-    <div class="social">
-      <a href="#">Instagram</a>
-      <a href="#">Telegram</a>
+  <section data-aos="fade-up">
+    <h2>Отзывы</h2>
+    <div class="swiper reviews">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="review1.jpg" alt="Отзыв 1"></div>
+        <div class="swiper-slide"><img src="review2.jpg" alt="Отзыв 2"></div>
+        <div class="swiper-slide"><img src="review3.jpg" alt="Отзыв 3"></div>
+        <div class="swiper-slide"><img src="review4.jpg" alt="Отзыв 4"></div>
+      </div>
     </div>
   </section>
+
+  <section class="quote" data-aos="fade">
+    «Ты не обязана оставаться прежней — ты можешь изменить всё. Всё начинается с твоего внутреннего выбора.»
+  </section>
+
+  <section class="contact" data-aos="fade-up">
+    <h2>Контакты</h2>
+    <div class="social-icons">
+      <a href="tel:+79999999999"><i class="fas fa-phone"></i></a>
+      <a href="https://wa.me/79999999999"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://t.me/вашник"><i class="fab fa-telegram"></i></a>
+      <a href="https://instagram.com/ваш_инстаграм"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const certSlider = new Swiper('.certificates', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+    });
+    const reviewSlider = new Swiper('.reviews', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+    });
+  </script>
 </body>
 </html>
-
