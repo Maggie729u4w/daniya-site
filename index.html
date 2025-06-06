@@ -1,84 +1,187 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Оплата курса</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дания Ахмедзянова — духовный наставник</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Playfair Display', serif;
-      background: #fffdfa;
+      font-family: 'Open Sans', sans-serif;
+      background: #fefdfc;
       color: #333;
-      margin: 0;
-      padding: 0;
+      line-height: 1.6;
     }
-    .container {
-      max-width: 600px;
-      margin: 4em auto;
-      background: #fffaf4;
-      padding: 2em;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(245, 220, 180, 0.3);
-    }
-    h1 {
+    header {
+      background: url('light-rays.jpg') center/cover no-repeat;
       text-align: center;
-      margin-bottom: 1em;
+      padding: 6em 1em 4em;
     }
-    label {
-      display: block;
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 30px rgba(255, 245, 200, 0.9);
+    }
+    header h1 {
       margin-top: 1em;
-      font-weight: bold;
+      font-size: 2em;
+      font-family: 'Playfair Display', serif;
+      color: #aa893c;
     }
-    input, textarea {
-      width: 100%;
-      padding: 0.8em;
+    header p {
       margin-top: 0.5em;
-      border-radius: 8px;
-      border: 1px solid #ddd;
+      font-style: italic;
+      color: #775;
+    }
+    nav {
+      background: #fff8f1;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #a87b1d;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    section {
+      padding: 3em 1em;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .about, .quote, .programs, .certificates, .reviews, .payment, .contact {
+      margin-bottom: 4em;
+    }
+    .quote {
+      text-align: center;
+      background: #fff9f1;
+      padding: 2em;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3em;
+      position: relative;
+    }
+    .quote:before, .quote:after {
+      content: '"';
+      font-size: 3em;
+      color: #e9d9b2;
+    }
+    .program-card {
+      border: 1px solid #f2e7ce;
+      padding: 1.5em;
+      margin-bottom: 1.5em;
+      border-radius: 12px;
+      background: #fffefb;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1em;
+    }
+    .carousel img {
+      height: 200px;
+      border-radius: 10px;
+    }
+    .contact-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #aa893c;
+      font-size: 1.5em;
+    }
+    footer {
+      background: #fff7ed;
+      text-align: center;
+      padding: 2em 1em;
+      color: #888;
+      font-size: 0.9em;
     }
     button {
-      margin-top: 2em;
-      padding: 1em 2em;
-      background: linear-gradient(to right, #f7e9ce, #f0dcae);
+      background: #e9d7b5;
       border: none;
+      padding: 1em 2em;
       border-radius: 8px;
-      font-size: 1em;
       cursor: pointer;
-      width: 100%;
-      box-shadow: 0 0 10px rgba(255, 220, 180, 0.6);
-    }
-    button:hover {
-      box-shadow: 0 0 15px rgba(255, 200, 120, 0.9);
-    }
-    .instruction {
-      background: #fff5e1;
-      border: 1px dashed #e2c49a;
-      padding: 1em;
-      margin-top: 2em;
-      border-radius: 8px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Оплата курса</h1>
-    <form>
-      <label for="name">Ваше имя</label>
-      <input type="text" id="name" name="name" placeholder="Введите ваше имя" required />
+  <header>
+    <img src="portrait.jpg" alt="Портрет Дании">
+    <h1>Дания Ахмедзянова</h1>
+    <p>Духовный наставник, тета-хилер, проводник трансформации</p>
+  </header>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Введите ваш email" required />
+  <nav>
+    <a href="#about">Обо мне</a>
+    <a href="#programs">Программы</a>
+    <a href="#certificates">Сертификаты</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#payment">Оплата</a>
+    <a href="#contact">Контакты</a>
+  </nav>
 
-      <label for="comment">Комментарий (необязательно)</label>
-      <textarea id="comment" name="comment" rows="4" placeholder="Если есть пожелания..."></textarea>
+  <section class="about" id="about">
+    <h2>Обо мне</h2>
+    <p>Я — Дания Ахмедзянова, духовный наставник, преподаватель медитации, энерго-практик и целитель с опытом более 10 лет. За эти годы я провела десятки ретритов, более 20 авторских курсов и помогла сотням женщин вернуться к себе — к свету, любви, внутренней силе. Моя миссия — соединить вас с источником. С вашим собственным внутренним светом.</p>
+  </section>
 
-      <button type="submit">Перейти к оплате</button>
-    </form>
+  <section class="quote">
+    <p>«Ты не должна бороться за счастье — оно уже внутри тебя. Просто вспомни». — Дания</p>
+  </section>
 
-    <div class="instruction">
-      <p>После нажатия на кнопку вы будете перенаправлены на страницу с реквизитами для перевода. Пожалуйста, проверьте свою почту для подтверждения.</p>
+  <section class="programs" id="programs">
+    <h2>Программы и курсы</h2>
+    <div class="program-card">
+      <h3>Женский ретрит в Сочи</h3>
+      <p>5-дневное погружение в энергию исцеления, женскую силу и внутренний покой.</p>
     </div>
-  </div>
+    <div class="program-card">
+      <h3>Курс «Тета-Медитации»</h3>
+      <p>Пошаговая система активации подсознания и преображения жизни через глубокую практику.</p>
+    </div>
+  </section>
+
+  <section class="certificates" id="certificates">
+    <h2>Сертификаты</h2>
+    <div class="carousel">
+      <img src="cert1.jpg" alt="Сертификат 1">
+      <img src="cert2.jpg" alt="Сертификат 2">
+      <img src="cert3.jpg" alt="Сертификат 3">
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <h2>Отзывы</h2>
+    <div class="carousel">
+      <img src="review1.jpg" alt="Отзыв 1">
+      <img src="review2.jpg" alt="Отзыв 2">
+      <img src="review3.jpg" alt="Отзыв 3">
+    </div>
+  </section>
+
+  <section class="payment" id="payment">
+    <h2>Оплата</h2>
+    <p>Вы можете оплатить курс по кнопке ниже:</p>
+    <a href="payment.html"><button>Оплатить курс</button></a>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Контакты</h2>
+    <p>Свяжитесь со мной в удобном мессенджере:</p>
+    <div class="contact-icons">
+      <a href="https://wa.me/79001234567" target="_blank">📞 WhatsApp</a>
+      <a href="https://t.me/daniyasoul" target="_blank">💬 Telegram</a>
+      <a href="https://instagram.com/daniya.light" target="_blank">📸 Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Дания Ахмедзянова. Все права защищены.
+  </footer>
 </body>
 </html>
