@@ -1,148 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дания Ахмедзянова — Духовный наставник</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оплата курса</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Playfair Display', serif;
-      margin: 0;
-      background: #fefefe;
+      background: #fffdfa;
       color: #333;
+      margin: 0;
+      padding: 0;
     }
-    header {
-      background: url('https://i.imgur.com/UOMrFka.jpg') no-repeat center center / cover;
-      text-align: center;
-      padding: 5em 1em 3em;
-      color: white;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    }
-    header h1 {
-      font-size: 2.8em;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    section {
-      padding: 3em 1.5em;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section-light {
-      background: #fff;
-    }
-    .section-soft {
-      background: #f9f7f4;
-    }
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 0.5em;
-      text-align: center;
-    }
-    .box, .block {
-      background: #ffffffcc;
-      border-radius: 12px;
+    .container {
+      max-width: 600px;
+      margin: 4em auto;
+      background: #fffaf4;
       padding: 2em;
-      margin-bottom: 2em;
-      box-shadow: 0 0 15px rgba(0,0,0,0.04);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(245, 220, 180, 0.3);
     }
-    .button {
-      display: inline-block;
-      background: #f1d5ae;
-      color: #000;
-      text-decoration: none;
-      padding: 1em 2em;
-      border-radius: 30px;
+    h1 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
       font-weight: bold;
-      text-align: center;
-      margin: 1em auto;
     }
-    .certificates img {
-      max-width: 100%;
-      margin: 1em 0;
-      border-radius: 12px;
+    input, textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin-top: 0.5em;
+      border-radius: 8px;
+      border: 1px solid #ddd;
     }
-    .reviews, .schedule {
-      display: grid;
-      gap: 1em;
+    button {
+      margin-top: 2em;
+      padding: 1em 2em;
+      background: linear-gradient(to right, #f7e9ce, #f0dcae);
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(255, 220, 180, 0.6);
     }
-    footer {
-      text-align: center;
-      padding: 2em;
-      background: #f1f1f1;
-      color: #666;
+    button:hover {
+      box-shadow: 0 0 15px rgba(255, 200, 120, 0.9);
+    }
+    .instruction {
+      background: #fff5e1;
+      border: 1px dashed #e2c49a;
+      padding: 1em;
+      margin-top: 2em;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Дания Ахмедзянова</h1>
-    <p>Духовный наставник, преподаватель медитации и энергии</p>
-  </header>
+  <div class="container">
+    <h1>Оплата курса</h1>
+    <form>
+      <label for="name">Ваше имя</label>
+      <input type="text" id="name" name="name" placeholder="Введите ваше имя" required />
 
-  <section class="section-light">
-    <h2>Обо мне</h2>
-    <div class="box">
-      <p>Я — Дания Ахмедзянова, духовный наставник, преподаватель медитации, энерго-практик и целитель с опытом более 10 лет.</p>
-      <p>Автор более 20 курсов по тета-хилингу и медитациям.</p>
-      <p>После нескольких личных theta-сессий мои клиенты с лёгкостью:</p>
-      <ul>
-        <li>увеличивали доходы в 10 раз</li>
-        <li>выходили на обложки журналов</li>
-        <li>становились продюсерами и телеведущими</li>
-      </ul>
-      <p>Я верю в соединение духовного и материального — именно этот путь дарует нам смысл и гармонию.</p>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Введите ваш email" required />
+
+      <label for="comment">Комментарий (необязательно)</label>
+      <textarea id="comment" name="comment" rows="4" placeholder="Если есть пожелания..."></textarea>
+
+      <button type="submit">Перейти к оплате</button>
+    </form>
+
+    <div class="instruction">
+      <p>После нажатия на кнопку вы будете перенаправлены на страницу с реквизитами для перевода. Пожалуйста, проверьте свою почту для подтверждения.</p>
     </div>
-  </section>
-
-  <section class="section-soft">
-    <h2>Программа курса</h2>
-    <div class="box">
-      <ul>
-        <li>День 1 — Тета-медитация: освобождение от внутреннего напряжения</li>
-        <li>День 2 — Принятие себя и раскрытие женственности</li>
-        <li>День 3 — Проявление желаемой реальности</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section-light certificates">
-    <h2>Сертификаты</h2>
-    <img src="https://i.imgur.com/yyNfSox.jpg" alt="certificate 1">
-    <img src="https://i.imgur.com/ksGM5tx.jpg" alt="certificate 2">
-    <img src="https://i.imgur.com/e3aNy2Z.jpg" alt="certificate 3">
-  </section>
-
-  <section class="section-soft">
-    <h2>Отзывы</h2>
-    <div class="reviews">
-      <div class="block">«После работы с Даней я почувствовала лёгкость в теле и душе. Всё стало ясно!»</div>
-      <div class="block">«Благодарю за мягкость, энергию и свет, который ты даришь!»</div>
-      <div class="block">«Произошёл реальный прорыв. Медитации волшебные!»</div>
-    </div>
-  </section>
-
-  <section class="section-light">
-    <h2>Расписание ретритов</h2>
-    <div class="schedule">
-      <div class="block">Июль 2025 — Женский круг в Подмосковье</div>
-      <div class="block">Сентябрь 2025 — Медитационный ретрит в Сочи</div>
-      <div class="block">Ноябрь 2025 — Онлайн-погружение в тета-хилинг</div>
-    </div>
-  </section>
-
-  <section class="section-soft">
-    <h2>Оплата участия</h2>
-    <div class="box">
-      <p>Стоимость курса: <strong>5000 руб.</strong></p>
-      <a class="button" href="payment.html">Перейти к оплате</a>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Дания Ахмедзянова — Все права защищены
-  </footer>
+  </div>
 </body>
 </html>
