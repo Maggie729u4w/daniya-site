@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оплата участия</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fdfdfc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      border-radius: 16px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      margin-top: 30px;
+      width: 100%;
+      background-color: #e0cfc0;
+      color: #fff;
+      border: none;
+      padding: 16px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #d3bda9;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Оплата участия</h1>
+    <form>
+      <label>ФИО</label>
+      <input type="text" placeholder="Ваше имя и фамилия" required />
+
+      <label>Email</label>
+      <input type="email" placeholder="example@mail.ru" required />
+
+      <label>Телефон</label>
+      <input type="tel" placeholder="+7 (999) 999-99-99" required />
+
+      <label>Промокод (если есть)</label>
+      <input type="text" placeholder="Введите промокод" />
+
+      <button type="submit" onclick="window.location.href='https://pay.example.com'">Перейти к оплате</button>
+
+      <div class="note">
+        Нажимая на кнопку, вы соглашаетесь с обработкой персональных данных
+      </div>
+    </form>
+  </div>
+</body>
+</html>
