@@ -1,131 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дания Ахмедзянова — Духовный наставник</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дания Ахмедзянова</title>
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box;}
     body {
-      font-family: 'Inter', sans-serif;
-      background: #fefefe;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfc;
       color: #333;
-      line-height: 1.6;
+      scroll-behavior: smooth;
     }
     header {
-      background: url('photo_5334752073926962949_y.jpg') no-repeat center/cover;
-      padding: 100px 20px;
+      background: url("photo_5334752073926962963_y.jpg") center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      flex-direction: column;
       color: #fff;
+      animation: fadeIn 2s ease;
     }
     header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
     header p {
-      font-size: 18px;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
     section {
       padding: 60px 20px;
       max-width: 900px;
-      margin: 0 auto;
-    }
-    .about, .offerings, .certificates, .testimonials, .retreats, .contact {
-      margin-bottom: 60px;
+      margin: auto;
+      animation: fadeInUp 1.5s ease;
     }
     .certificates img, .testimonials img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
     }
-    .button {
-      background: #eee5d9;
-      color: #000;
-      padding: 14px 30px;
-      text-decoration: none;
-      border-radius: 8px;
-      display: inline-block;
-      margin-top: 20px;
-      box-shadow: 0 0 15px #cbbfb3;
-    }
-    footer {
-      background: #fafafa;
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 14px;
-      color: #777;
+    .certificates img:hover, .testimonials img:hover {
+      transform: scale(1.05);
     }
     .carousel {
       display: flex;
       overflow-x: auto;
-      gap: 16px;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
     }
-    .carousel img {
-      max-width: 250px;
-      flex-shrink: 0;
+    .carousel div {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+    }
+    .btn {
+      background: linear-gradient(135deg, #fff, #f3e9dc);
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      color: #333;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(255, 215, 180, 0.4);
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #fef6f0;
+      box-shadow: 0 0 30px rgba(255, 200, 160, 0.5);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Дания Ахмедзянова</h1>
-    <p>Духовный наставник • Энергопрактик • Theta-преподаватель</p>
+    <p>Духовный наставник, преподаватель медитации, энергопрактик и целитель с опытом более 10 лет</p>
+    <a class="btn" href="payment.html">Оплатить участие</a>
   </header>
 
-  <section class="about">
+  <section>
     <h2>Обо мне</h2>
-    <p>Я — духовный наставник и преподаватель медитации с более чем 10-летним опытом. За годы практики я помогла сотням женщин соединиться с собой, раскрыть потенциал и выйти на новый уровень жизни. Мои клиенты создавали миллионные проекты, находили гармонию в семье и восстанавливали связь с телом и духом.</p>
-  </section>
-
-  <section class="offerings">
-    <h2>Мои курсы и программы</h2>
-    <ul>
-      <li>🌿 Онлайн-ретрит «Женский круг света»</li>
-      <li>🌀 Theta-хилинг: базовый курс</li>
-      <li>💎 Индивидуальные сессии исцеления</li>
-    </ul>
-    <a href="payment.html" class="button">Оплатить участие</a>
+    <p>
+      Автор и преподаватель более 20 курсов по theta-медитации. После нескольких личных theta-сессий мои клиенты с лёгкостью:
+      вырастали в 10 раз в миллионном бизнесе, оказывались на обложке журнала, становились ведущими и продюсерами теле-новостей и многое другое.
+    </p>
   </section>
 
   <section class="certificates">
     <h2>Сертификаты</h2>
     <div class="carousel">
-      <img src="photo_5334752073926962955_y.jpg" alt="Сертификат 1">
-      <img src="photo_5334752073926962960_y.jpg" alt="Сертификат 2">
+      <div><img src="photo_5334752073926962955_y.jpg" alt="certificate 1"></div>
+      <div><img src="photo_5334752073926962953_y.jpg" alt="certificate 2"></div>
+      <div><img src="photo_5334752073926962949_y.jpg" alt="certificate 3"></div>
     </div>
   </section>
 
   <section class="testimonials">
     <h2>Отзывы</h2>
     <div class="carousel">
-      <img src="photo_5334752073926962953_y.jpg" alt="Отзыв 1">
-      <img src="photo_5334752073926962954_y.jpg" alt="Отзыв 2">
-      <img src="photo_5334752073926962963_y.jpg" alt="Отзыв 3">
+      <div><img src="photo_5334752073926962960_y.jpg" alt="отзыв 1"></div>
+      <div><img src="photo_5334752073926962954_y.jpg" alt="отзыв 2"></div>
+      <div><img src="photo_5334752073926962951_y.jpg" alt="отзыв 3"></div>
     </div>
   </section>
 
-  <section class="retreats">
-    <h2>Ближайшие мероприятия</h2>
-    <p>✨ Август 2025 — Ретрит на Байкале
-      <br>✨ Октябрь 2025 — Интенсив «Пробуждение» (онлайн)
-      <br>✨ Декабрь 2025 — Theta-сессии в Москве
-    </p>
-  </section>
-
-  <section class="contact">
+  <section>
     <h2>Контакты</h2>
-    <p>📞 Телефон: <a href="tel:+79001234567">+7 900 123 45 67</a><br>
-      📩 Email: <a href="mailto:contact@daniya.ru">contact@daniya.ru</a><br>
-      💬 WhatsApp / Telegram: <a href="https://t.me/daniya">@daniya</a><br>
-      📸 Instagram: <a href="https://instagram.com/daniya">@daniya</a></p>
+    <p>Telegram: <a href="https://t.me/yourhandle">@yourhandle</a><br>
+       WhatsApp: +7 900 000-00-00<br>
+       Instagram: <a href="https://instagram.com/yourprofile">@yourprofile</a></p>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Даня Ахмедзянова. Все права защищены.</p>
-  </footer>
 </body>
 </html>
